@@ -1,7 +1,7 @@
 app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile("home.html");
 });
 
-app.get("/tables", function (req, res) {
-    res.sendFile(path.join(__dirname, "tables.html"));
+app.get("/survey", function (req, res) {
+    res.sendFile("survey.html");
 });

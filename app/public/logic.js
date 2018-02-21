@@ -14,14 +14,13 @@ $('#submit').on("click", function(){
         $("#q10").val()
     ];
     
-    $.post("/api/fighters", results, function(data) {
+    $.post("/api/fighters", results).then(function(data) {
         if (data) {
             //DISPLAY MODAL
             alert("Your character is " + data.name);
         } else {
-            alert("ERROR")
+            alert("ERROR");
         }
-
-        $(".form-control").empty(),
+        $(".form-control").empty();
     });
 });

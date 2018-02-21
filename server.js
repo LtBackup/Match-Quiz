@@ -10,11 +10,6 @@ var PORT = 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Data
-// ===========================================================
-// var reservations = [];
-// var waitlist = [];
-
 // Static directory
 app.use(express.static("app/public"));
 
@@ -22,6 +17,7 @@ app.use(express.static("app/public"));
 // =============================================================
 require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
+require("./app/data/matches.js")(app);
 
 // Listener
 // ===========================================================
