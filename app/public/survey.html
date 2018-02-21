@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Choose Your Character</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- <link rel="shortcut icon" href="../images/megaman.png" type="image/x-icon"> -->
+    <script src="logic.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center" id="entrance">
+                <h1>Choose Your Answers!</h1>
+                </hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <h3>Question 1</h3>
+                    <h4>You prefer to settle confrontations face to face</h4>
+                    <div class="dropdown">
+                        <select class="form-control" id="q1">
+                            <option value="5">5 - strongly agree</option>
+                            <option value="4">4 - agree</option>
+                            <option value="3">3 - neutral</option>
+                            <option value="2">2 - disagree</option>
+                            <option value="1">1 - strongly disagree</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <h3>Question 2</h3>
+                    <h4>You prefer the mountains to the ocean</h4>
+                    <div class="dropdown">
+                        <select class="form-control" id="q2">
+                            <option value="5">5 - strongly agree</option>
+                            <option value="4">4 - agree</option>
+                            <option value="3">3 - neutral</option>
+                            <option value="2">2 - disagree</option>
+                            <option value="1">1 - strongly disagree</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <h3>Question 3</h3>
+                    <h4>You are interested in space travel</h4>
+                    <div class="dropdown">
+                        <select class="form-control" id="q3">
+                            <option value="5">5 - strongly agree</option>
+                            <option value="4">4 - agree</option>
+                            <option value="3">3 - neutral</option>
+                            <option value="2">2 - disagree</option>
+                            <option value="1">1 - strongly disagree</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <h3>Question 4</h3>
+                    <h4>You enjoy being in the spotlight</h4>
+                    <div class="dropdown">
+                        <select class="form-control" id="q4">
+                            <option value="5">5 - strongly agree</option>
+                            <option value="4">4 - agree</option>
+                            <option value="3">3 - neutral</option>
+                            <option value="2">2 - disagree</option>
+                            <option value="1">1 - strongly disagree</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <h3>Question 5</h3>
+                    <h4>You are not a gadget collector</h4>
+                    <div class="dropdown">
+                        <select class="form-control" id="q5">
+                            <option value="5">5 - strongly agree</option>
+                            <option value="4">4 - agree</option>
+                            <option value="3">3 - neutral</option>
+                            <option value="2">2 - disagree</option>
+                            <option value="1">1 - strongly disagree</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <h3>Question 6</h3>
+                    <h4>You prefer to work alone</h4>
+                    <div class="dropdown">
+                        <select class="form-control" id="q6">
+                            <option value="5">5 - strongly agree</option>
+                            <option value="4">4 - agree</option>
+                            <option value="3">3 - neutral</option>
+                            <option value="2">2 - disagree</option>
+                            <option value="1">1 - strongly disagree</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <h3>Question 7</h3>
+                    <h4>You prefer tried and true vs breaking edge</h4>
+                    <div class="dropdown">
+                        <select class="form-control" id="q7">
+                            <option value="5">5 - strongly agree</option>
+                            <option value="4">4 - agree</option>
+                            <option value="3">3 - neutral</option>
+                            <option value="2">2 - disagree</option>
+                            <option value="1">1 - strongly disagree</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <h3>Question 8</h3>
+                    <h4>You would rather lift weights than run</h4>
+                    <div class="dropdown">
+                        <select class="form-control" id="q8">
+                            <option value="5">5 - strongly agree</option>
+                            <option value="4">4 - agree</option>
+                            <option value="3">3 - neutral</option>
+                            <option value="2">2 - disagree</option>
+                            <option value="1">1 - strongly disagree</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <h3>Question 9</h3>
+                    <h4>You are an animal lover</h4>
+                    <div class="dropdown">
+                        <select class="form-control" id="q9">
+                            <option value="5">5 - strongly agree</option>
+                            <option value="4">4 - agree</option>
+                            <option value="3">3 - neutral</option>
+                            <option value="2">2 - disagree</option>
+                            <option value="1">1 - strongly disagree</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <h3>Question 10</h3>
+                    <h4>You prefer to settle confrontations face to face</h4>
+                    <div class="dropdown">
+                        <select class="form-control" id="q10">
+                            <option value="5">5 - strongly agree</option>
+                            <option value="4">4 - agree</option>
+                            <option value="3">3 - neutral</option>
+                            <option value="2">2 - disagree</option>
+                            <option value="1">1 - strongly disagree</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <h3>Question 11</h3>
+                    <h4>You prefer to settle confrontations face to face</h4>
+                    <div class="dropdown">
+                        <select class="form-control" id="q11">
+                            <option value="5">5 - strongly agree</option>
+                            <option value="4">4 - agree</option>
+                            <option value="3">3 - neutral</option>
+                            <option value="2">2 - disagree</option>
+                            <option value="1">1 - strongly disagree</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <h3>Question 12</h3>
+                    <h4>You prefer to settle confrontations face to face</h4>
+                    <div class="dropdown">
+                        <select class="form-control" id="q12">
+                            <option value="5">5 - strongly agree</option>
+                            <option value="4">4 - agree</option>
+                            <option value="3">3 - neutral</option>
+                            <option value="2">2 - disagree</option>
+                            <option value="1">1 - strongly disagree</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-xs-12">
+                    <div>
+                        <button id="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>
