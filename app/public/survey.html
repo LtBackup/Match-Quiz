@@ -11,9 +11,9 @@
         crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <!-- <link rel="shortcut icon" href="../images/megaman.png" type="image/x-icon"> -->
-    <script src="logic.js"></script>
+    <script src="js/logic.js"></script>
 </head>
 
 <body>
@@ -31,6 +31,7 @@
                     <h4>You prefer to settle confrontations face to face</h4>
                     <div class="dropdown">
                         <select class="form-control" id="q1">
+                            <option disabled selected value>Select your answer</option>
                             <option value="5">5 - strongly agree</option>
                             <option value="4">4 - agree</option>
                             <option value="3">3 - neutral</option>
@@ -48,6 +49,7 @@
                     <h4>You prefer the mountains to the ocean</h4>
                     <div class="dropdown">
                         <select class="form-control" id="q2">
+                            <option disabled selected value>Select your answer</option>
                             <option value="5">5 - strongly agree</option>
                             <option value="4">4 - agree</option>
                             <option value="3">3 - neutral</option>
@@ -65,6 +67,7 @@
                     <h4>You are interested in space travel</h4>
                     <div class="dropdown">
                         <select class="form-control" id="q3">
+                            <option disabled selected value>Select your answer</option>
                             <option value="5">5 - strongly agree</option>
                             <option value="4">4 - agree</option>
                             <option value="3">3 - neutral</option>
@@ -82,6 +85,7 @@
                     <h4>You enjoy being in the spotlight</h4>
                     <div class="dropdown">
                         <select class="form-control" id="q4">
+                            <option disabled selected value>Select your answer</option>
                             <option value="5">5 - strongly agree</option>
                             <option value="4">4 - agree</option>
                             <option value="3">3 - neutral</option>
@@ -99,6 +103,7 @@
                     <h4>You are not a gadget collector</h4>
                     <div class="dropdown">
                         <select class="form-control" id="q5">
+                            <option disabled selected value>Select your answer</option>
                             <option value="5">5 - strongly agree</option>
                             <option value="4">4 - agree</option>
                             <option value="3">3 - neutral</option>
@@ -116,6 +121,7 @@
                     <h4>You prefer to work alone</h4>
                     <div class="dropdown">
                         <select class="form-control" id="q6">
+                            <option disabled selected value>Select your answer</option>
                             <option value="5">5 - strongly agree</option>
                             <option value="4">4 - agree</option>
                             <option value="3">3 - neutral</option>
@@ -133,6 +139,7 @@
                     <h4>You prefer tried and true vs breaking edge</h4>
                     <div class="dropdown">
                         <select class="form-control" id="q7">
+                            <option disabled selected value>Select your answer</option>
                             <option value="5">5 - strongly agree</option>
                             <option value="4">4 - agree</option>
                             <option value="3">3 - neutral</option>
@@ -150,6 +157,7 @@
                     <h4>You would rather lift weights than run</h4>
                     <div class="dropdown">
                         <select class="form-control" id="q8">
+                            <option disabled selected value>Select your answer</option>
                             <option value="5">5 - strongly agree</option>
                             <option value="4">4 - agree</option>
                             <option value="3">3 - neutral</option>
@@ -167,6 +175,7 @@
                     <h4>You are an animal lover</h4>
                     <div class="dropdown">
                         <select class="form-control" id="q9">
+                            <option disabled selected value>Select your answer</option>
                             <option value="5">5 - strongly agree</option>
                             <option value="4">4 - agree</option>
                             <option value="3">3 - neutral</option>
@@ -184,6 +193,8 @@
                     <h4>You are generally more outgoing than reserved</h4>
                     <div class="dropdown">
                         <select class="form-control" id="q10">
+                            <option disabled selected value>Select your answer</option>
+                            <option value="0">Select your answer</option>
                             <option value="5">5 - strongly agree</option>
                             <option value="4">4 - agree</option>
                             <option value="3">3 - neutral</option>
@@ -199,6 +210,41 @@
                 <div>
                     <button id="submit">Submit</button>
                 </div>
+            </div>
+        </div>
+        <div class="modal fade" id="charModal" role="dialog">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title text-center" id="selection">There was a problem. Please try again later.</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p id="description"></p>
+                        <img id="charImage" alt="Character" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal fade" id="incomplete" role="dialog">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title text-center">Please answer all questions.</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
