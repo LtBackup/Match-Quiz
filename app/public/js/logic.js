@@ -18,7 +18,6 @@ $(document).ready(function () {
                 $("#incomplete").modal();
             }
         }
-        console.log(results);
         if (valid) {
             var package = {
                 val: JSON.stringify(results)

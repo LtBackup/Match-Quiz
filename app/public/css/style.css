@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    background-image: url("../images/smash64.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#content{
+    background-color: rgba(68,68,68,.7);
+    color: white;
+}
+
+h1 {
+    margin: 5vh;
+}
+
+#submit, enter {
+    margin: 5vh 0 10vh 0;
+}
