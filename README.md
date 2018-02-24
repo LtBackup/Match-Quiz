@@ -12,7 +12,6 @@ Find out what Super Smash Bros. 64 Character you are! Answer 10 questions, and y
 * jQuery
 * Node
 * Express
-* Bootstrap
 
 ## Acknowledgments
 
