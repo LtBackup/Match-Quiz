@@ -5,12 +5,16 @@ body{
 #content{
     background-color: rgba(68,68,68,.7);
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 #imageContent{
     background-color: black;
+}
+
+#enter{
+    margin-top: 10px;
 }
 
 h1 {
@@ -32,4 +36,9 @@ h1 {
 #imageSlot{
     min-width: 100%;
     padding: 0;
+}
+
+#gitLink{
+    padding-top: 10px;
+    font-size: 3em;
 }
