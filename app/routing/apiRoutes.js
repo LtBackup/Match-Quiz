@@ -1,27 +1,29 @@
-app.get("/delete/:index?", function (req, res) {
-    reservations.splice(req.params.index,1);
-    reservations.push(waitlist.shift());
-    res.json(reservations);
-});
+module.exports = function (app) {
 
-app.get("/reservations", function (req, res) {
-    res.json(reservations);
-});
+    var fighters = require("../data/matches.js").fighters;
 
-app.get("/waitlist", function (req, res) {
-    res.json(waitlist);
-});
+    app.get("/api/fighters", function (req, res) {
+        return (res.json(fighters));
+    });
 
-app.post("/reserve", function(req, res) {
-    var newReservation = req.body;
-    var reserved = true;
-    if(reservations.length < 5){
-    reservations.push(newReservation);
-    console.log(reservations)
-        return res.json(reserved);
-    }
-    else{
-        waitlist.push(newReservation);
-        return res.json(!reserved);
-    }
-  });
+    app.post("/api/fighters", function (req, res) {
+        var responses = JSON.parse(req.body.val);
+        var result = fighters[0];
+        var smallestDifference = null;
+        for (var i = 0; i < fighters.length; i++) {
+            var difference = 0;
+            for (var j = 0; j < responses.length; j++) {
+                difference += Math.abs(fighters[i].scores[j] - responses[j]);
+            }
+            if (smallestDifference === null) {
+                smallestDifference = difference;
+            }
+            if (difference < smallestDifference) {
+                result = fighters[i];
+                smallestDifference = difference;
+            }
+        }
+        return res.json(result);
+    });
+
+};

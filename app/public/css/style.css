@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+
+#content{
+    background-color: rgba(68,68,68,.7);
+    color: white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#imageContent{
+    background-color: black;
+}
+
+h1 {
+    margin: 5vh;
+}
+
+#submit, enter {
+    margin: 5vh 0 10vh 0;
+}
+
+#charModal, #incomplete {
+    color: #333;
+}
+
+#charSpread {
+    width: 100%;
+}
+
+#imageSlot{
+    min-width: 100%;
+    padding: 0;
+}

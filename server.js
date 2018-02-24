@@ -4,16 +4,11 @@ var express = require("express");
 var path = require("path");
 var bodyParser = require("body-parser");
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
-// Data
-// ===========================================================
-// var reservations = [];
-// var waitlist = [];
 
 // Static directory
 app.use(express.static("app/public"));
@@ -22,6 +17,7 @@ app.use(express.static("app/public"));
 // =============================================================
 require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
+require("./app/data/matches.js");
 
 // Listener
 // ===========================================================
