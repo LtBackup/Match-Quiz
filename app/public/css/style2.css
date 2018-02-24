@@ -1,9 +1,11 @@
 body{
     background-color: black;
-    background-image: "../images/smashLogo.png";
+    background-image: url("../images/smashLogo.png");
+    background-size: 500px 500px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
+    background-position: 50% 50%;
+    
 }
 
 #content{
